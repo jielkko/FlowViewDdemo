@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         >
 
-          <com.hjl.taglibrary.view.HotTagView
+         <!-- <com.hjl.taglibrary.view.HotTagView
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               app:mTitle="欧美影视">
 
-          </com.hjl.taglibrary.view.HotTagView>
+          </com.hjl.taglibrary.view.HotTagView>-->
 
     </com.hjl.taglibrary.view.FlowLayout>
 
