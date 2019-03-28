@@ -1,9 +1,9 @@
-   TagConfig.getInstance()
+
+       TagConfig.getInstance()
                 .setBgColor(Color.parseColor("#eeeeee"))  //设置背景颜色
                 .setLineColor(Color.parseColor("#cccccc"))//设置边框颜色
                 .setTextColor(Color.parseColor("#848484"))//设置文字颜色
                 .setIconColor(Color.parseColor("#cccccc"));//设置右方箭头颜色
-
 
         TagConfig.getInstance()
                 .setBgColor(Color.parseColor("#ffffff"))  //设置背景颜色
