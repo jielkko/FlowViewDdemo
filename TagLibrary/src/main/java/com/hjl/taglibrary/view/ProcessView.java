@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.hjl.taglibrary.ConfigManager;
 import com.hjl.taglibrary.R;
 
 /**
@@ -77,6 +78,24 @@ public class ProcessView extends LinearLayout {
 
         mName = (TextView) view.findViewById(R.id.name);
         mIcon = (ImageView) view.findViewById(R.id.icon);
+
+
+        //设置边框颜色
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setCornerRadius(5);
+        drawable.setStroke(1, ConfigManager.getInstance().getLineColor());
+        drawable.setColor(ConfigManager.getInstance().getBgColor());
+        mName.setBackgroundDrawable(drawable);
+
+        //设置文字颜色
+        mName.setTextColor(ConfigManager.getInstance().getTextColor());
+
+
+        VectorDrawableCompat vectorDrawableCompat = VectorDrawableCompat.create(getResources(), R.drawable.ic_tag_arrow_right, mContext.getTheme());
+        //你需要改变的颜色
+        vectorDrawableCompat.setTint(ConfigManager.getInstance().getIconColor());
+        mIcon.setImageDrawable(vectorDrawableCompat);
+
     }
 
     private void initData(AttributeSet attrs) {

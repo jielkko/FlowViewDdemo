@@ -29,18 +29,18 @@ public class MainActivity extends AppCompatActivity {
         mTaglist = (HotTagLIstView) findViewById(R.id.taglist);
         mProcesslist = (ProcessListView) findViewById(R.id.processlist);
 
-    /*    TagConfig.getInstance()
+        TagConfig.getInstance()
                 .setBgColor(Color.parseColor("#eeeeee"))  //设置背景颜色
                 .setLineColor(Color.parseColor("#cccccc"))//设置边框颜色
                 .setTextColor(Color.parseColor("#848484"))//设置文字颜色
-                .setIconColor(Color.parseColor("#cccccc"));//设置右方箭头颜色*/
+                .setIconColor(Color.parseColor("#cccccc"));//设置右方箭头颜色
 
 
-        TagConfig.getInstance()
+       /* TagConfig.getInstance()
                 .setBgColor(Color.parseColor("#ffffff"))  //设置背景颜色
                 .setLineColor(Color.parseColor("#45c800"))//设置边框颜色
                 .setTextColor(Color.parseColor("#45c800"))//设置文字颜色
-                .setIconColor(Color.parseColor("#cccccc"));//设置右方箭头颜色
+                .setIconColor(Color.parseColor("#cccccc"));//设置右方箭头颜色*/
 
 
         List<TagModel> tagModelList = new ArrayList<>();
