@@ -29,8 +29,6 @@ public class HotTagView extends LinearLayout {
 
     public HotTagView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        this.mContext = context;
-        initView();
         initData(attrs);
     }
 
@@ -82,8 +80,8 @@ public class HotTagView extends LinearLayout {
     }
 
     private void initData(AttributeSet attrs) {
-        TypedArray array = mContext.obtainStyledAttributes(attrs, R.styleable.hottag);
-        mName.setText(array.getString(R.styleable.hottag_mTitle));
+    /*    TypedArray array = mContext.obtainStyledAttributes(attrs, R.styleable.hottag);
+        mName.setText(array.getString(R.styleable.hottag_mTitle));*/
 
     }
 

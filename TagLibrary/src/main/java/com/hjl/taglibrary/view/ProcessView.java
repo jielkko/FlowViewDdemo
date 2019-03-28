@@ -99,8 +99,8 @@ public class ProcessView extends LinearLayout {
     }
 
     private void initData(AttributeSet attrs) {
-        TypedArray array = mContext.obtainStyledAttributes(attrs, R.styleable.hottag);
-        mName.setText(array.getString(R.styleable.hottag_mTitle));
+      /*  TypedArray array = mContext.obtainStyledAttributes(attrs, R.styleable.hottag);
+        mName.setText(array.getString(R.styleable.hottag_mTitle));*/
 
     }
 

@@ -38,5 +38,21 @@
         />
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:text="流程图"/>
+
+    <com.hjl.taglibrary.view.MyEditTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mContent=""
+        app:mHint="请输入"
+        app:mIsEnabled="true"
+        app:mIsRequired="true"
+        app:mTitle="项目名称" />
 
 </LinearLayout>
