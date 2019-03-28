@@ -1,4 +1,32 @@
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:text="热门标签"/>
+
+
+    <com.hjl.taglibrary.view.HotTagLIstView
+        android:id="@+id/taglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:text="流程图"/>
+
+
+    <com.hjl.taglibrary.view.ProcessListView
+        android:id="@+id/processlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
        TagConfig.getInstance()
                 .setBgColor(Color.parseColor("#eeeeee"))  //设置背景颜色
                 .setLineColor(Color.parseColor("#cccccc"))//设置边框颜色
