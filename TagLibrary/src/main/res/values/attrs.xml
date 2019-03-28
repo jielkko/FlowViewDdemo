@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="hottag">
+        <!--标题-->
+        <attr name="mTitle" format="string"/>
+    </declare-styleable>
+
+
+</resources>
