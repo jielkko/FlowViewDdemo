@@ -44,16 +44,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         List<TagModel> tagModelList = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 3; i++) {
             tagModelList.add(new TagModel("标签" + i));
         }
         mTaglist.setTagList(tagModelList);
 
 
         List<TagModel> processList = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 3; i++) {
             processList.add(new TagModel("流程" + i));
         }
+     /*   processList.add(new TagModel("待处理"));
+        processList.add(new TagModel("进行"));
+        processList.add(new TagModel("已完"));*/
         mProcesslist.setTagList(processList);
 
     }
