@@ -8,51 +8,112 @@
     android:orientation="vertical">
 
 
-    <TextView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#eeeeee"
-        android:gravity="center"
-        android:text="热门标签"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
 
 
-    <com.hjl.taglibrary.view.HotTagLIstView
-        android:id="@+id/taglist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#eeeeee"
-        android:gravity="center"
-        android:text="流程图"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:text="热门标签"/>
 
 
-    <com.hjl.taglibrary.view.ProcessListView
-        android:id="@+id/processlist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+            <com.hjl.taglibrary.view.HotTagLIstView
+                android:id="@+id/taglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#eeeeee"
-        android:gravity="center"
-        android:text="流程图"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:text="流程图"/>
 
-    <com.hjl.taglibrary.view.MyEditTextView
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:mContent=""
-        app:mHint="请输入"
-        app:mIsEnabled="true"
-        app:mIsRequired="true"
-        app:mTitle="项目名称" />
+
+            <com.hjl.taglibrary.view.ProcessListView
+                android:id="@+id/processlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#eeeeee"
+                android:gravity="center"
+                android:text="流程图"/>
+
+            <com.hjl.taglibrary.view.MyEditTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mContent=""
+                app:mHint="请输入"
+                app:mIsEnabled="true"
+                app:mIsRequired="true"
+                app:mTitle="项目名称" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#a0e759" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#F9BF55" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#dddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#a0e759" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#fa4a32" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#a0e759" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#dddddd" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
 
 </LinearLayout>
